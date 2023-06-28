@@ -39,6 +39,12 @@ public class Main {
         int CGPA = (marks1+marks2+marks3)/30;
         System.out.println("The required CGPA is:  "+CGPA);
 
+
+	int x = SC.nextInt();
+	int y = SC.nextInt();
+	int new = (x-y)/2;
+	    
+
     }
 }
 
@@ -55,4 +61,5 @@ public class Main {
 //Cannot start with digit, white space is not allowed
 // contain alphabets, _ , $
 // taking input from java
+
 
