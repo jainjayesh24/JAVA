@@ -80,3 +80,44 @@ public class Main {
     }
 
 
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner SC = new Scanner(System.in);
+        System.out.println("Enter Marks of Physics: ");
+        int Physics = SC.nextInt();
+        System.out.println("Enter Marks of Chemistry: ");
+        int Chemistry = SC.nextInt();
+        System.out.println("Enter Marks of Mathematics: ");
+        int Mathematics = SC.nextInt();
+        System.out.println("Enter Marks of Computer Science: ");
+        int CS = SC.nextInt();
+        System.out.println("Enter Marks of English: ");
+        int English = SC.nextInt();
+
+        /*
+        Percentage >= 90% : Grade A
+    Percentage >= 80% : Grade B
+    Percentage >= 70% : Grade C
+    Percentage >= 60% : Grade D
+    Percentage >= 40% : Grade E
+    Percentage < 40% : Grade F
+         */
+
+        int Per = (Physics+Chemistry+CS+Mathematics+English)/5;
+        if (Per>=90){
+            System.out.println("Grade is: A ");
+        }else if(Per>=80){
+            System.out.println("Grade is: B");
+        }else if(Per>=70){
+            System.out.println("Grade is: C");
+        }else if(Per>=60){
+            System.out.println("Grade is: D");
+        }else if(Per>=40){
+            System.out.println("Grade is: E");
+        }else{
+            System.out.println("Grade is: F");
+        }
+           }
+    }
