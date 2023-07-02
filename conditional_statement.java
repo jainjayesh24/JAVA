@@ -50,4 +50,33 @@ public class Main {
     }
 }
 
+// Calculate oldest and youngest person
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner SC = new Scanner(System.in);
+        System.out.println("Enter First Person Age: ");
+        int age1 = SC.nextInt();
+        System.out.println("Enter Second Person Age: ");
+        int age2 = SC.nextInt();
+        System.out.println("Enter Third Person Age: ");
+        int age3 = SC.nextInt();
+        if (age1 > age2 && age1 > age3) {
+            System.out.println("The oldest age is of (First Person) and i.e" + age1);
+        } else if (age2 > age1 && age2 > age3) {
+            System.out.println("The oldest age is of (Second Person) and i.e" + age2);
+        } else {
+            System.out.println("The oldest age is of (Third Person) and i.e" + age3);
+        }
+        if (age1<age2 && age1<age3 ){
+            System.out.println("The youngest age is of (First Person) and i.e"+age1);
+        }else if(age2<age1 && age2<age3){
+            System.out.println("The youngest age is of (Second Person) and i.e"+age2);
+        }else{
+            System.out.println("The youngest age is of (Third Person) and i.e"+age3);
+
+        }    }
+    }
+
 
