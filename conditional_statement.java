@@ -51,23 +51,3 @@ public class Main {
 }
 
 
-// To find greatest of three number
-Scanner SC = new Scanner(System.in);
-        System.out.println("Enter First Number: ");
-        int a = SC.nextInt();
-        System.out.println("Enter Second Number: " );
-        int b = SC.nextInt();
-        System.out.println("Enter Third Number: ");
-        int c = SC.nextInt();
-
-        if (a>b){
-            if (a>c){
-                System.out.println("The Greatest Number is: "+a);
-            }
-        }else if(b>a){
-            if (b>c){
-                System.out.println("The Greatest Number is: "+b);
-            }
-        }else{
-            System.out.println("The Greatest Number is: "+c);
-        }
